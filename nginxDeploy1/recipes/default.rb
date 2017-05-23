@@ -6,6 +6,11 @@ execute "update-upgrade" do
   action :run
 end
 
+execute "uptime" do 
+  command "uptime && top"
+  action :run
+end
+
 package 'nginx' do
   action :install
 end
