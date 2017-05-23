@@ -1,10 +1,6 @@
 #
 # Cookbook:: nginxDeploy1
 # Recipe:: default
-execute "update-upgrade" do
-  command "apt-get update && apt-get upgrade -y"
-  action :run
-end
 
 package 'nginx' do
   action :install
